@@ -1,0 +1,308 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, h1, h2, h3, h4,
+h5, h6, p, a, img, ol, ul, li, form, label,
+article, aside, figure, footer, header, 
+hgroup, menu, nav, section{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	font-family: aleoregular;
+	margin: 0;
+	padding: 0;
+}
+ol, ul, li {
+	list-style: none;
+}
+
+			/* ============================
+			Main Menu
+			============================ */
+.floatleft {
+	float: left;
+}
+.floatright {
+	float: right;
+}
+.topHeader {
+	overflow: hidden;
+}
+	.container {
+		width: 1100px;
+		margin: 0px auto;
+	}
+	.header {
+		padding: 35px 0;
+		overflow: hidden;
+	}
+		.menu ul {
+			overflow: hidden;
+		}
+			.menu li {
+				float: left;
+				text-align: right;
+				padding-left: 50px;
+			}
+				.menu li a {
+					display: block;
+					text-decoration: none;
+					text-transform: capitalize;
+					color: #000;
+					font-size: 20px;
+				}
+				.menu li a.active {
+					color: #f34949;
+					cursor: default;
+				}
+				.menu li a:hover:not(.active) {
+					color: #f34949;
+				}
+
+.sliderArea {
+	background: url(img/slider.jpg) no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 570px;
+	overflow: hidden;
+	position: relative;
+	border-bottom: 3px solid #f34949;
+	background-size: 100% 100%;
+}
+	.slide {
+		background: #000;
+		opacity: .4;
+		height: 570px;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		text-align: center;
+	}
+		.title h1 {
+			padding-top: 200px;
+			font-family: 'wc_mano_negra_btaregular';
+			color: #fff;
+			font-size: 100px;
+			overflow: hidden;
+		}
+		.title h4 {
+			color: #fff;
+			font-size: 16px;
+			letter-spacing: 1px;
+			position: relative;
+		}
+		.title h4:before {
+			content: " ";
+			position: absolute;
+			top: 10px;
+			left: 320px;
+			width: 30px;
+			height: 1px;
+			background: #fff;
+		}
+		.title h4:after {
+			content: " ";
+			position: absolute;
+			top: 10px;
+			right: 315px;
+			width: 30px;
+			height: 1px;
+			background: #fff;
+		}
+
+.priceArea {
+	position: relative;
+}
+	.TitleName {
+		background: url(img/menu_bg.png) no-repeat;
+		width: 100px;
+		height: 40px;
+		background-position: center !important;
+		text-align: center;
+		background-size: 100% 100%;
+		position: absolute;
+		top: 0;
+		left: 675px;
+		color: #fff;
+		padding-top: 11px;
+	}
+	.list_price {
+		overflow: hidden;
+	}
+		.list {
+			padding-top: 100px;
+			overflow: hidden;
+			width: 500px;
+		}
+			.list_left li {
+				padding-bottom: 25px;
+				list-style: none;
+			}
+				.list_left h2 {
+					font-size: 15px;
+				}
+				.list_left p {
+					font-size: 11px;
+				}
+			.price_right li {
+				padding-bottom: 38px;
+				list-style: none;
+				position: relative;
+			}
+			.price_right li:before {
+				position: absolute;
+				top: 10px;
+				left: -250px;
+				background: #eee;
+				content: "";
+				width: 185px;
+				height: 2px;
+			}
+		.more {
+			display: block;
+			width: 100px;
+			border: 1px solid gray;
+			margin: 30px auto 10px;
+			height: 28px;
+			line-height: 28px;
+			color: gray;
+			padding-left: 5px;
+			font-size: 14px;
+			border-radius: 5px;
+		}
+			.more a {
+			text-decoration: none;
+			color: gray;
+			position: relative;
+			}
+				.more a:after {
+					content: " | ";
+					position: absolute;
+					right: -10px;
+					top: -7px;
+					display: block;
+					font-size: 13px;
+				}
+				.more a:before {
+					content: " ^ ";
+					position: absolute;
+					right: -27px;
+					top: -1px;
+					display: block;
+					font-size: 25px;
+				}
+
+.featuredArea {
+	padding-top: 100px;
+}
+	.featuredArea h2 {
+		font-size: 20px;
+		color: #3b3b3b;
+		text-transform: uppercase;
+		padding-bottom: 75px;
+		position: relative;
+	}
+	.featuredArea h2:after {
+		position: absolute;
+		content: "";
+		top: 11px;
+		left: 195px;
+		background: #eee;
+		width: 905px;
+		height: 1px;
+	}
+		.featured {
+			overflow: hidden;
+		}
+			.featured li {
+				display: inline-block;
+				padding-right: 56px;
+			}
+				.featured li:last-child {
+					padding-right: 0px;
+				}
+				.text {
+					overflow: hidden;
+					padding: 10px 0;
+					font-size: 12px;
+					color: gray;
+				}
+					.text p {
+						width: 180px;
+						float: left;
+					}
+					.text span {
+						width: 50px;
+						float: right;
+						text-align: right;
+					}
+
+.galleryArea {
+	margin: 75px 0;
+}
+	.imageGallery {
+		overflow: hidden;
+	}
+		.galleryArea h2 {
+			font-size: 20px;
+			color: #3b3b3b;
+			text-transform: uppercase;
+			padding-bottom: 75px;
+			position: relative;
+		}
+		.galleryArea h2:after {
+			position: absolute;
+			content: "";
+			top: 11px;
+			left: 195px;
+			background: #eee;
+			width: 905px;
+			height: 1px;
+		}
+			.singleImage {
+				width: 366px;
+			}
+				.singleImage img{
+				margin: -2px;
+			}
+
+.mainFooter{
+	background: #3b3b3b;
+	padding: 30px 0;
+}
+.footer {
+	overflow: hidden;
+}
+	.fourth_one {
+		width: 237px;
+		margin-right: 50px;
+		font-size: 12px;
+		line-height: 22px;
+		color: white;
+	}
+	.fourth_one:last-child {
+		margin-right: 0px;
+	}
+	.fourth_one li a {
+		text-decoration: none;
+		color: white;
+	}
+	.fourth_one li a:hover {
+		color: #F34949;
+		text-decoration: underline;
+	}
+
+

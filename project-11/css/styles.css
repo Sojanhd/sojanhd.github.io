@@ -1,0 +1,284 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, h1, h2, h3, h4, h5, 
+h6, p, a, img, ol, ul, li, form, label,
+article, aside, canvas, details, embed, figure,
+figcaption, footer, header, section,summary {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+/* ==========================Main CSS=========================== */
+
+.container {
+	width: 1170px;
+	margin: 0px auto;
+}
+.top_header {
+	background: #930101;
+	overflow: hidden;
+	padding-top: 70px;
+}
+  .top_header h1 {
+  	float: left;
+  	width: 300px;
+  	font-size: 25px;
+  	text-transform: uppercase;
+  	color: #fff;
+  	padding-top: 16px;
+  }
+  .top_header .top_nav {
+  	float: right;
+  }
+    .top_nav ul {
+
+    }
+      .top_nav li {
+      	float: left;
+      	margin-left: 10px;
+      }
+        .top_nav li a {
+          display: block;
+		  text-decoration: none;
+		  color: #fff;
+		  padding: 20px 15px;
+		  font-size: 17px;
+        }
+        .top_nav li a:hover {
+        	background: #8F8C7D;
+        	color: #930101;
+        }
+        .top_nav li a.active {
+        	background: #8F8C7D;
+        	color: #930101;
+        }
+.slider {
+	background: #8F8C7D;
+	padding: 30px 0;
+}
+  .slider_bg {
+      background: #D0D0C5;
+	  padding: 9px 5px;
+	  width: 950px;
+	  margin: 0px auto;
+  }
+    .banner {
+    	background: url(../images/banner-img.jpg) no-repeat;
+    	height: 330px;
+    	width: 940px;
+    	margin: 0px auto;
+    }
+.content_top {
+	background: #A7A493;
+	padding: 70px 0;
+}
+  .bd {
+  	padding-bottom: 70px;
+  	border-bottom: 1px solid #333;
+  	overflow: hidden;
+  	margin: 0px auto;
+	width: 960px;
+  }
+    .one_third {
+    	float: left;
+    	margin-right: 46px;
+    	width: 285px;
+    }
+    .one_third:last-child {
+    	margin-right: 0px;
+    }
+      .one_third img {
+      	background: #D0D0C5;
+      	padding: 7px;
+      }
+      .one_third h4 {
+		font-size: 26px;
+		font-weight: normal;
+		color: #444;
+		padding: 0px 0 15px 0;
+	  }
+	  .one_third p {
+	  	font-size: 12px;
+	  	padding: 15px 0;
+	  	color: #444;
+	  	line-height: 18px;
+	  }
+	  .more {
+	  	background: #930101;
+		display: block;
+		width: 80px;
+		text-align: center;
+		text-decoration: none;
+		color: #fff;
+		padding: 5px 0;
+		font-size: 13px;
+	  }
+.content_bottom {
+  overflow: hidden;
+  background: #A7A493;
+  padding-bottom: 70px;
+}
+  .article_links {
+	float: left;
+	width: 680px;
+	margin-right: 20px;
+  }
+
+  .sidebar {
+	float: left;
+	width: 470px;
+  }
+    .content_bottom h2 {
+    	font-size: 26px;
+    	color: #444;
+    	padding-bottom: 10px;
+    } 
+      .picture {
+    	float: left;
+		width: 244;
+		margin-right: 10px;
+      }
+      	.picture img {
+      		background: #D0D0C5;
+      		padding: 5px;
+      	}
+      .text_links {
+      	float: left;
+      	width: 426px;
+      }
+        .text_links li {
+        	list-style: none;
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+			border-bottom: 1px solid gray;
+        }
+        .text_links li:last-child {
+        	padding-bottom: 0px;
+        	margin-bottom: 0px;
+        	border-bottom: none;
+        }
+          .text_links li a {
+          	text-decoration: none;
+			color: #930101;
+			padding: 8px 0;
+			display: block;
+          }
+          .text_links li p {
+          	font-size: 14px;
+			line-height: 16px;
+			color: #555;
+          }
+          .text {
+			padding: 10px 0;
+			overflow: hidden;
+		  }
+          .text img {
+            float: left;
+			width: 20px;
+			display: block;
+			margin-right: 15px;
+		  }
+		  .text h5 {
+			color: #930101;
+			width: 435px;
+			float: left;
+		  }
+		  .text p {
+		  	float: left;
+			width: 435px;
+			padding: 10px 0;
+			color: #555;
+			font-size: 14px;
+			line-height: 18px;
+		  }
+.footer {
+	background: #930000;
+	overflow: hidden;
+}
+.footer_div {
+	float: left;
+	width: 345px;
+	border-right: 1px solid #6b0300;
+	border-left: 1px solid #c60300;
+	padding: 30px 20px 0;
+	height: 180px;
+}
+.footer_div h3 {
+	color: #fff;
+	font-size: 27px;
+	letter-spacing: 1px;
+}
+.footer_div p {
+	color: gray;
+	padding: 10px 0 0;
+	font-size: 14px;
+	line-height: 17px;
+}
+.more2 {
+	background: #fff;
+	color: #930000;
+	width: 60px;
+	text-decoration: none;
+	font-size: 14px;
+	margin: 20px 0 0;
+	display: block;
+	padding: 5px 10px;
+	text-align: center;
+}
+.footer_div:first-child {
+	border-left: none;
+}
+.footer_border {
+	border-left: 1px solid #c60300;
+	height: 210px;
+	width: 1px;
+	float: left;
+}
+.f_link {
+	color: gray;
+	text-decoration: none;
+	font-size: 14px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid gray;
+	display: block;
+}
+a.first {
+	padding-top: 10px;
+}
+a.f_link:last-child {
+	border-bottom: none;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+.footer_div form {
+	padding-top: 10px;
+}
+input {
+	border: none;
+	display: inline-block;
+	padding: 5px;
+}
+button {
+	border: none;
+	padding: 4px;
+	color: #930000;
+}

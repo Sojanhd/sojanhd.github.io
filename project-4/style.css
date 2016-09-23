@@ -1,0 +1,455 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, iframe, h1, h2, h3, h4, h5,
+h6, p,a, address, img, ol, ul, li, fieldset, form,
+label, legend,article, aside, figure, figcaption, 
+footer, header, hgroup, nav, section, summary, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+h3 {
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 30px;
+	color: #fff;
+	position: relative;
+	padding: 50px 0;
+}
+h3:after {
+	content: " ";
+	width: 60px;
+	height: 2px;
+	background: #fff;
+	position: absolute;
+	left: 0;
+	top: 80px;
+}
+.fix {
+	overflow: hidden;
+}
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+.top_header {
+	background: #444e56;
+	padding: 60px 0;
+}
+  .top_header h2 {
+	float: left;
+	text-transform: uppercase;
+	font-size: 30px;
+	color: #fff;
+  }
+    .top_header h2 span {
+	  color: #4bcaff;
+    }
+  .top_header nav {
+  	float: right;
+  }
+    .top_header nav ul {
+      overflow: hidden;
+    }
+      .top_header nav li {
+    	float: left;
+    	margin-left: 30px;
+      }
+        .top_header nav a {
+          display: block;
+    	  text-decoration: none;
+    	  color: #fff;
+    	  padding: 6px 10px;
+    	  border: 1px solid #444E56;
+    	  text-transform: uppercase;
+        }
+        .top_header nav a:hover {
+          border: 1px solid #4bcaff;
+          color: #4bcaff;
+        }
+
+.slider {
+  background: url(images/slider.jpg) no-repeat;
+  width: 100%;
+  height: 500px;
+  background-position: center center;
+  background-size: 100% 100%;
+  position: relative;
+  display: block;
+}
+  .slider .slider_text {
+  	position: absolute;
+  	top: 190px;
+  	left: 366px;
+
+  }
+    .slider .slider_text p {
+    	text-align: center;
+    	font-size: 42px;
+    	background: #424d54;
+		padding: 5px;
+    }
+    .slider .slider_text p:first-child {
+      width: 587px;
+      margin: 15px auto;
+    }
+
+.service_area {
+	background: #4bcaff;
+	color: #fff;
+	padding-bottom: 50px;
+
+}
+  .fourth_one {
+  	float: left;
+  	width: 266px;
+  	margin-right: 35px;
+  }
+  .fourth_one:last-child {
+  	margin-right: 0px;
+  }
+  .fourth_one img {
+  	display: block;
+  }
+  .fourth_one h4 {
+  	text-transform: uppercase;
+  	font-size: 18px;
+  	padding: 10px 0;
+  }
+  .fourth_one p {
+  	font-size: 12px;
+  	line-height: 17px;
+  	text-align: justify;
+  }
+
+.portfolio {
+	padding-bottom: 20px;
+}
+.portfolio_nav {
+	overflow: hidden;
+}
+  .portfolio_nav h3 {
+	color: #000;
+	float: left;
+  }
+  .portfolio_nav h3:after {
+	background: #000;
+  }
+  .portfolio_nav nav {
+  	float: right;
+  }
+    .portfolio_nav nav ul {
+    	overflow: hidden;
+    } 
+      .portfolio_nav nav li {
+      	float: left;
+      	margin-left: 30px;
+      	padding-top: 45px;
+      }
+        .portfolio_nav nav li a {
+        	display: block;
+        	color: #000;
+        	padding: 10px;
+        	text-decoration: none;
+        	text-transform: uppercase;
+        	letter-spacing: 1px;
+        	border: 1px solid #fff;
+        }
+          .portfolio_nav nav li a:hover {
+          	border: 1px solid #4BCAFF;
+          	color: #4BCAFF;
+          }
+  .featured li {
+  	float: left;
+  	list-style: none;
+  	position: relative;
+  	margin-right: 30px;
+  	margin-bottom: 30px;
+  }
+    .featured .plus {
+    	display: none;
+		width: 270px;
+		height: 270px;
+		text-align: center;
+		line-height: 270px;
+		background: #000;
+		opacity: .8;
+		position: absolute;
+		top: 0px;
+		left: 0;
+		color: #fff;
+		font-size: 30px;
+    }
+    .featured img {
+    	display: block;
+    }
+    .featured li:hover .plus {
+    	display: block;
+    	cursor: pointer;
+    }
+    .featured li:nth-child(4n+4) {
+    	margin-right: 0px;
+    }
+
+.video_area {
+	background: #515f67;
+	padding-bottom: 50px;
+}
+  .text {
+  	float: left;
+  	width: 700px;
+  	margin-right: 70px;
+  }
+    .text p {
+    	padding-bottom: 20px;
+		font-size: 14px;
+		line-height: 19px;
+		color: #fff;
+    }
+      .text a {
+      	display: block;
+      	width: 80px;
+      	border: 1px solid #353f46;
+      	padding: 7px 10px;
+      	text-align: center;
+      	text-decoration: none;
+      	color: #353f46;
+      	text-transform: uppercase;
+      }
+  video {
+  	float: right;
+  	width: 400px;
+  	display: block;
+  	padding-top: 50px;
+  }
+
+.twitter {
+	background: #4bcaff;
+	padding-bottom: 50px;
+}
+  .twitter h3 {
+  	float: left;
+  }
+  .twitter img {
+  	float: right;
+	display: block;
+	padding-top: 55px;
+  }
+  .twitter p {
+  	clear: both;
+  	color: #fff;
+  	letter-spacing: 1px;
+  	text-align: center;
+  	font-size: 19px;
+  }
+    .twitter p a {
+    	display: inline-block;
+    	color: #000;
+    	text-decoration: none;
+    	font-weight: bold;
+    	padding: 3px 0;
+    	font-size: 22px;
+    }
+      .twitter p a:hover {
+      	text-decoration: underline;
+      	color: #000;
+      }
+
+.about {
+	background: url(images/about_bg.jpg) no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	display: block;
+	color: #fff;
+	padding-bottom: 30px;
+}
+  .only_text {
+  	float: left;
+  	margin-right: 70px;
+  	width: 550px;
+  }
+  .text_links {
+  	float: left;
+  	width: 550px;
+  }
+  .about p {
+  	padding-bottom: 15px;
+	font-size: 13px;
+	line-height: 17px;
+  }
+  .text_links img {
+  	display: inline-block;
+	width: 25px;
+	height: 25px;
+	border: 2px solid #fff;
+	padding: 5px;
+  }
+
+.testimonial {
+	background: #fff;
+	padding-bottom: 50px;
+}
+  .testimonial h3 {
+  	float: left;
+  	color: #515f67;
+  }
+  .testimonial h3:after {
+  	background: #515f67;
+  }
+  .testimonial img {
+  	float: right;
+  	display: block;
+  	padding-top: 50px;
+  }
+    .testimonial p {
+    	clear: both;
+		color: #515f67;
+		letter-spacing: 1px;
+		line-height: 22px;
+		text-align: center;
+    }
+      .testimonial a {
+      	color: #4bcaff;
+		display: block;
+		text-decoration: none;
+		font-size: 13px;
+		letter-spacing: 1px;
+		width: 100px;
+		padding-top: 10px;
+	  }
+	  .testimonial a:hover {
+	  	text-decoration: underline;
+	  }
+
+.the_form {
+	background: url(images/form.jpg) no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	display: block;
+	padding-bottom: 70px;
+	opacity: .8;
+	height: 500px;
+   }
+   .the_form h3 {
+   	color: #000;
+   }
+   .the_form h3:after {
+   	background: #000;
+   }
+   .top_form {
+   	float: left;
+   	margin-right: 70px;
+   	width: 550px;
+   }
+      .top_form > label {
+     	color: #000;
+		text-transform: uppercase;
+		font-size: 14px;
+		display: block;
+		padding: 5px 0;
+      }
+      .top_form > input {
+      	padding: 7px 5px;
+		display: block;
+		width: 540px;
+		border: none;
+		margin-bottom: 20px;
+      }
+   .describe {
+   	width: 550px;
+   	float: right;
+   }
+   	  .describe p {
+   	  	color: #000;
+		font-size: 14px;
+		line-height: 19px;
+		padding-bottom: 20px;
+   	  }
+   	  .describe address {
+   	  	color: #000;
+		font-size: 14px;
+		line-height: 19px;
+   	  }
+   .the_form .message {
+   	clear: both;
+	display: block;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding-bottom: 5px;
+	padding-top: 30px;
+   }
+      .the_form textarea {
+      	display: block;
+		width: 100%;
+		height: 150px;
+		border: none;
+      }
+      .the_form button {
+      	display: block;
+		border: none;
+		margin-top: 20px;
+		padding: 5px 10px;
+		font-size: 13px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		background: #4BCAFF;
+		cursor: pointer;
+      }
+
+
+.footer_area {
+	padding: 50px 0;
+	background: #353f47;
+	overflow: hidden;
+}
+  .footer_area ul {
+  	overflow: hidden;
+  	float: left;
+  }
+    .footer_area li {
+    	float: left;
+    	padding-right: 20px;
+		margin-right: 20px;
+		position: relative;
+    }
+    .footer_area li:after {
+    	content: " | ";
+    	color: #515f67;
+    	display: block;
+    	position: absolute;
+		top: 0;
+		right: 0;
+    }
+    .footer_area li:last-child:after {
+    	content: "";
+    	display: block;
+    }
+      .footer_area li a {
+      	display: block;
+      	color: #515f67;
+      	text-transform: uppercase;
+      	text-decoration: none;
+      	font-size: 14px;
+      }
+
+  .footer_area p {
+  	float: right;
+  	color: #515f67;
+  }
